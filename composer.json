@@ -1,0 +1,15 @@
+{
+    "name": "nashvent/restapilemontech",
+    "type": "project",
+    "authors": [
+        {
+            "name": "nashvent",
+            "email": "anibalventura123@gmail.com"
+        }
+    ],
+    "autoload": {
+      "files": ["config/constants.php", "config/utilities.php", "config/Router.php", "config/Database.php"],
+      "classmap": ["src/"]
+    },
+    "require": {}
+}
