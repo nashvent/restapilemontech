@@ -8,8 +8,10 @@
         }
     ],
     "autoload": {
-      "files": ["config/constants.php", "config/utilities.php", "config/Router.php", "config/Database.php"],
-      "classmap": ["src/"]
+      "files": ["config/constants.php", "config/utilities.php", "config/Database.php"],
+      "classmap": ["src"]
     },
-    "require": {}
+    "require": {
+        "leafs/router": "^0.1.7"
+    }
 }

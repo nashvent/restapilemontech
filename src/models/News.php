@@ -16,10 +16,11 @@ class News
    * CREATE
    * @return boolean
    */
-  public function createTask($description) : bool
+  public function create($query, $content) : bool
   {
-    $this->db->query("INSERT INTO task (`description`,`completed`) VALUES (:task, 0)");
-    $this->db->bind(':task', $description);
+    $this->db->query("INSERT INTO news (`query`,`content`) VALUES (:query, :content)");
+    $this->db->bind(':query', $query);
+    $this->db->bind(':content', $content);
     if ($this->db->execute())
       return true;
     return false;
@@ -29,35 +30,21 @@ class News
    * READ
    * @return array
    */
-  public function selectAll() : array
+  public function all() : array
   {
     $this->db->query("SELECT * FROM task");
     return $this->db->resultSet();
   }
 
   /**
-   * UPDATE
+   * GET
    * @return boolean
    */
-  public function changeTaskStatus($id) : bool
+  public function findByQuery($query)
   {
-    $this->db->query("UPDATE task SET completed = 1 WHERE id = :id");
-    $this->db->bind(':id', $id);
-    if ($this->db->execute())
-      return true;
-    return false;
-  }
-
-  /**
-   * DELETE
-   * @return boolean
-   */
-  public function deleteTask($id) : bool
-  {
-    $this->db->query("DELETE FROM task WHERE id = :id");
-    $this->db->bind(':id', $id);
-    if ($this->db->execute())
-      return true;
-    return false;
+    $this->db->query("SELECT * FROM news WHERE query = :query LIMIT 1");
+    $this->db->bind(':query', $query);
+    $smtp =  $this->db->execute();
+    $smtp->fetch();
   }
 }

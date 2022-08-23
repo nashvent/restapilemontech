@@ -5,7 +5,9 @@ class NewsController
 {
   public function home()
   {
-    echo "home";
+    return json_encode([
+      "hola"=>"asd",
+    ]);
   }
 
   public function about()

@@ -1,4 +1,15 @@
 <?php
+use Leaf\Router;
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
-Config\Router::load(APPROOT . '/src/app/routes.php')->redirect();
+Router::get("/", "Controllers\BasicController@home");
+
+// MATCH example
+Router::get("/test", function () {
+  header('Content-Type: application/json');
+  echo json_encode([
+    "message" => "Test!"
+  ]);
+});
+
+Router::run();

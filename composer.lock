@@ -1,0 +1,206 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "402e5068c9cbaf93a6ed73ab6abf8e74",
+    "packages": [
+        {
+            "name": "leafs/anchor",
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leafsphp/anchor.git",
+                "reference": "3ea546866a2f658fc3afdb4240ed949f0e2b07c2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leafsphp/anchor/zipball/3ea546866a2f658fc3afdb4240ed949f0e2b07c2",
+                "reference": "3ea546866a2f658fc3afdb4240ed949f0e2b07c2",
+                "shasum": ""
+            },
+            "require-dev": {
+                "pestphp/pest": "^1.21"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Leaf\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Darko",
+                    "email": "mickdd22@gmail.com",
+                    "homepage": "https://mychi.netlify.app",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Leaf PHP util module",
+            "homepage": "https://leafphp.netlify.app/#/",
+            "keywords": [
+                "framework",
+                "leaf",
+                "php",
+                "util"
+            ],
+            "support": {
+                "issues": "https://github.com/leafsphp/anchor/issues",
+                "source": "https://github.com/leafsphp/anchor/tree/v1.2.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/leafsphp",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/leaf",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2022-01-22T14:14:28+00:00"
+        },
+        {
+            "name": "leafs/http",
+            "version": "v2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leafsphp/http.git",
+                "reference": "6afa66e799b48e55eaaf43642f3b5478def8b446"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leafsphp/http/zipball/6afa66e799b48e55eaaf43642f3b5478def8b446",
+                "reference": "6afa66e799b48e55eaaf43642f3b5478def8b446",
+                "shasum": ""
+            },
+            "require": {
+                "leafs/anchor": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Leaf\\Http\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Darko",
+                    "email": "mickdd22@gmail.com",
+                    "homepage": "https://mychi.netlify.app",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Leaf PHP HTTP module.",
+            "homepage": "https://leafphp.netlify.app/#/",
+            "keywords": [
+                "framework",
+                "headers",
+                "http",
+                "leaf",
+                "php",
+                "request",
+                "response"
+            ],
+            "support": {
+                "issues": "https://github.com/leafsphp/http/issues",
+                "source": "https://github.com/leafsphp/http/tree/v2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/leafsphp",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/leaf",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2022-05-29T10:34:06+00:00"
+        },
+        {
+            "name": "leafs/router",
+            "version": "v0.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leafsphp/router.git",
+                "reference": "c343c273f7b23f957a3bf8c587ecba8eeea57625"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leafsphp/router/zipball/c343c273f7b23f957a3bf8c587ecba8eeea57625",
+                "reference": "c343c273f7b23f957a3bf8c587ecba8eeea57625",
+                "shasum": ""
+            },
+            "require": {
+                "leafs/http": "*"
+            },
+            "require-dev": {
+                "pestphp/pest": "^1.21"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Leaf\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Darko",
+                    "email": "mickdd22@gmail.com",
+                    "homepage": "https://mychi.netlify.app",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Leaf router module for Leaf PHP.",
+            "homepage": "https://leafphp.netlify.app/#/modules/router",
+            "keywords": [
+                "framework",
+                "leaf",
+                "php",
+                "rest",
+                "router"
+            ],
+            "support": {
+                "issues": "https://github.com/leafsphp/router/issues",
+                "source": "https://github.com/leafsphp/router/tree/v0.1.7"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/leafsphp",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/leaf",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2022-08-20T01:44:44+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
